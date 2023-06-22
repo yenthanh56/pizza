@@ -1,0 +1,16 @@
+.container {
+	display: flex;
+	justify-content: space-evenly;
+}
+.item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.table {
+	width: 100%;
+	border-spacing: 30px;
+}
+.button:nth-child(2) {
+	margin-left: 6px;
+}

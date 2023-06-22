@@ -1,0 +1,85 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(50 100 150 / 49%);
+	z-index: 999;
+}
+
+.wrapper {
+	width: 30%;
+	background-color: #fff;
+	padding: 50px;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	animation: slide-down 300ms ease-out;
+	position: relative;
+}
+
+.title {
+	font-weight: 300;
+	font-size: 25px;
+}
+.yourname,
+.yourphone,
+.youraddress {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.control button {
+	padding: 10px 40px;
+	background-color: teal;
+	border: 0;
+	color: #fff;
+	border-radius: 4px;
+}
+
+.label {
+	font-size: 25px;
+	margin-bottom: 12px;
+}
+
+.input {
+	height: 40px;
+	padding: 0 10px;
+}
+
+.close {
+	position: absolute;
+	top: -10px;
+	right: -13px;
+}
+.close button {
+	background-color: #ccc;
+	color: #000;
+	border: 0;
+	padding: 8px 13px;
+	border-radius: 999px;
+	cursor: pointer;
+}
+
+@keyframes slide-down {
+	from {
+		opacity: 0;
+		transform: translateY(-5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
